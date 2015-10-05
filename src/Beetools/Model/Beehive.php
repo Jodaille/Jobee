@@ -1,4 +1,8 @@
 <?php
+/**
+ * Try to represent evolution of bees and varroas
+ * inside a honey bee colony in function of days
+ */
 class Beehive
 {
     protected $aTypes = array('bee','mother','drone');
