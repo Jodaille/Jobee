@@ -18,7 +18,7 @@ class IndexController extends AbstractActionController
         foreach($oRuche->getTypes() as $type)
         {
           $aCalendars["$type"] = $oRuche->getCalendarOfType($type);
-          //echo $oRuche->toHtml($aCalendars["$type"]);
+          echo $oRuche->toHtml($aCalendars["$type"]);
         }
         $view->aCalendars = $aCalendars;
         $view->oRuche     = $oRuche;
