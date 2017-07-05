@@ -11,4 +11,12 @@ You need to install OpenCv
 ## on every images in VespaVelutina directory
 ```sh
 find VespaVelutina/ -type f -name *.jpg -exec ./OpenCv/VespaOrangeTailDetect.py {} \;
-    ```
+```
+
+
+Delete old files
+```sh
+
+find VespaVelutina/ -type f -name *_mask.jpg -delete
+find VespaVelutina/ -type f -name *_blob.jpg -delete
+```
