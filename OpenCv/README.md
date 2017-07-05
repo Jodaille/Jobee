@@ -14,11 +14,12 @@ find VespaVelutina/ -type f -name *.jpg -exec ./OpenCv/VespaOrangeTailDetect.py 
 ```
 
 
-Delete old files
-file with _mask.jpg extension contains yellow part of image detected
-file with _blob.jpg extension detected zones (blob)
-```sh
+Delete old files:
 
+- file with _mask.jpg extension contains yellow part of image detected
+- file with _blob.jpg extension detected zones (blob)
+
+```sh
 find VespaVelutina/ -type f -name *_mask.jpg -delete
 find VespaVelutina/ -type f -name *_blob.jpg -delete
 ```
